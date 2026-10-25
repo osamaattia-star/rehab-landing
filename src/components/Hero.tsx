@@ -86,7 +86,7 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick, onAboutClick }) => {
                 onClick={onAboutClick}
                 className="inline-flex items-center justify-center gap-2 bg-white/80 hover:bg-[#E5EEE8]/80 text-[#1B2B4B] border border-[#D8C8B7] font-medium text-base sm:text-lg px-6 py-3.5 rounded-xl transition-all cursor-pointer"
               >
-                <span>تعرّف عليها</span>
+                <span>عن الأخصائية</span>
                 <ChevronDown className="w-4 h-4 text-[#69756F]" aria-hidden="true" />
               </button>
             </div>
