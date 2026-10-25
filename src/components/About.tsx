@@ -23,9 +23,27 @@ export const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-14 text-right">
-          <div className="flex items-center gap-2 mb-3 text-sm font-semibold tracking-wide text-[#39766F]">
+          <div className="flex items-center gap-2 mb-4 text-sm font-semibold tracking-wide text-[#39766F]">
             <span className="w-6 h-[1.5px] bg-[#57968F]" aria-hidden="true" />
             <span>نبذة عنها</span>
+          </div>
+
+          {/* Mobile-First Portrait above the text */}
+          <div className="mb-6 flex justify-start">
+            <div className="relative group">
+              <div
+                className="absolute -inset-1.5 bg-[#57968F]/20 rounded-2xl blur-xs -z-10 transition-opacity"
+                aria-hidden="true"
+              />
+              <div className="relative w-64 sm:w-72 md:w-80 aspect-[4/5] rounded-2xl overflow-hidden border border-[#D8C8B7]/80 bg-white shadow-sm">
+                <img
+                  src="/assets/aistudio/image_6cad0675.png"
+                  alt="رحاب أبو الفتوح - أخصائية الصحة النفسية والإرشاد الأسري والزواجي وإرشاد المراهقين"
+                  className="w-full h-full object-cover object-top"
+                  loading="lazy"
+                />
+              </div>
+            </div>
           </div>
 
           <h2
