@@ -1,0 +1,6 @@
+{
+  "name": "rehab-abou-elfotouh-mental-wellness",
+  "description": "موقع رحاب أبو الفتوح - أخصائية الصحة النفسية والإرشاد الأسري والزواجي وإرشاد المراهقين",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
