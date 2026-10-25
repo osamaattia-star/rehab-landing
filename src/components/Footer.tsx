@@ -4,15 +4,11 @@
  */
 
 import React from 'react';
-import { MessageCircle, ArrowUpLeft, ShieldCheck, HelpCircle } from 'lucide-react';
+import { MessageCircle, ArrowUpLeft, ShieldCheck } from 'lucide-react';
 import { BrandEmblem } from './BotanicalElements';
 import { BRAND_INFO, WHATSAPP_NUMBER } from '../constants/booking';
 
-interface FooterProps {
-  onOpenDeployModal: () => void;
-}
-
-export const Footer: React.FC<FooterProps> = ({ onOpenDeployModal }) => {
+export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const navLinks = [
@@ -99,17 +95,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDeployModal }) => {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#69756F]">
           <div>
             جميع الحقوق محفوظة © {currentYear} {BRAND_INFO.name}.
-          </div>
-
-          <div className="flex items-center gap-4">
-            <button
-              type="button"
-              onClick={onOpenDeployModal}
-              className="inline-flex items-center gap-1 text-[#57968F] hover:underline cursor-pointer"
-            >
-              <HelpCircle className="w-3.5 h-3.5" />
-              <span>دليل النشر والاستضافة المجانية</span>
-            </button>
           </div>
         </div>
       </div>

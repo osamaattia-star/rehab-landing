@@ -14,13 +14,11 @@ import { BookingForm } from './components/BookingForm';
 import { FAQ } from './components/FAQ';
 import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
-import { DeploymentModal } from './components/DeploymentModal';
 import { MessageCircle } from 'lucide-react';
 import { WHATSAPP_NUMBER } from './constants/booking';
 
 export default function App() {
   const [selectedArea, setSelectedArea] = useState<string>('');
-  const [isDeployModalOpen, setIsDeployModalOpen] = useState<boolean>(false);
 
   const scrollToBooking = (areaTitle?: string) => {
     if (areaTitle) {
@@ -85,13 +83,7 @@ export default function App() {
       </main>
 
       {/* Section K: Footer */}
-      <Footer onOpenDeployModal={() => setIsDeployModalOpen(true)} />
-
-      {/* Deployment & Export Guide Modal */}
-      <DeploymentModal
-        isOpen={isDeployModalOpen}
-        onClose={() => setIsDeployModalOpen(false)}
-      />
+      <Footer />
 
       {/* Floating Discreet WhatsApp Contact Shortcut */}
       <aside aria-label="زر تواصل سريع عبر واتساب">
